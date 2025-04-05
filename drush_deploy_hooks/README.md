@@ -16,6 +16,8 @@ and `deploy` Quicksilver hooks.
 ## Usage
 
 ```yaml
+api_version: 1
+
 workflows:
   sync_code:
     after:
