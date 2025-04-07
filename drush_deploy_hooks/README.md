@@ -23,10 +23,6 @@ workflows:
     after:
       -
         type: webphp
-        description: 'Rebuild cache'
-        script: private/scripts/drush_deploy_hooks/cache_rebuild.php
-      -
-        type: webphp
         description: 'Execute database updates'
         script: private/scripts/drush_deploy_hooks/database_updates.php
       -
@@ -37,6 +33,10 @@ workflows:
         type: webphp
         description: 'Import configuration'
         script: private/scripts/drush_deploy_hooks/drush_config_import.php
+      -
+        type: webphp
+        description: 'Rebuild cache'
+        script: private/scripts/drush_deploy_hooks/cache_rebuild.php
       -
         type: webphp
         description: 'Run Drush deploy hooks'
@@ -45,10 +45,6 @@ workflows:
     after:
       -
         type: webphp
-        description: 'Rebuild cache'
-        script: private/scripts/drush_deploy_hooks/cache_rebuild.php
-      -
-        type: webphp
         description: 'Execute database updates'
         script: private/scripts/drush_deploy_hooks/database_updates.php
       -
@@ -59,6 +55,10 @@ workflows:
         type: webphp
         description: 'Import configuration'
         script: private/scripts/drush_deploy_hooks/drush_config_import.php
+      -
+        type: webphp
+        description: 'Rebuild cache'
+        script: private/scripts/drush_deploy_hooks/cache_rebuild.php
       -
         type: webphp
         description: 'Run Drush deploy hooks'
